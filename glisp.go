@@ -1,7 +1,10 @@
 package main
 
 import "fmt"
+import "os"
+import "github.com/InventorXtreme/glisp/lexer"
 
 func main() {
-	fmt.Println("test")
+    args := os.Args
+	fmt.Println(lexer.Lex(args[1]))
 }
